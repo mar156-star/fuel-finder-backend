@@ -124,6 +124,14 @@ app.get("/stations", async (req, res) => {
   }
 });
 
+
+app.get("/index/status", (req, res) => {
+  res.json({ ok: true, service: "fuel-finder-backend" });
+});
+
+
+
+
 /**
  * =========================
  * PORT (ONLY ONCE)
